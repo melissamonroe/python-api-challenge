@@ -12,15 +12,16 @@ But, if pressed, how would you **prove** it?
 
 ## Part I - WeatherPy
 
-## Strongest negative correlation: latitude and temperature (F)
-Northern Hemisphere - Temperature (F) vs. Latitude
+## Strongest negative correlation
+
+#### Northern Hemisphere - Temperature (F) vs. Latitude
 
 The max temperatures (F) (y-axis) are highest closest to the equator (latitue 0). As you get farther away from the equator (higher latitude value, x-axis), the max temperatures (F) decrease. 
 
 ![fig05_correlation_latmaxtemp_nh.png](output_data/fig05_correlation_latmaxtemp_nh.png)
 
-### Strongest positive correlation: latitude and temperature (F)
-Southern Hemisphere - Temperature (F) vs. Latitude
+## Strongest positive correlation
+#### Southern Hemisphere - Temperature (F) vs. Latitude
 
 The temperatures (F) (y-axis) are lowest farther away from the equator (latitue 0). As you get closer to the equator (higher latitude value, x-axis), the max temperature (F) increases. 
 
