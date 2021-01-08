@@ -12,15 +12,15 @@ But, if pressed, how would you **prove** it?
 
 ## Part I - WeatherPy
 
-## Strongest negative correlation
-
+## Observations
+### Strongest negative correlation
 #### Northern Hemisphere - Temperature (F) vs. Latitude
 
 The max temperatures (F) (y-axis) are highest closest to the equator (latitue 0). As you get farther away from the equator (higher latitude value, x-axis), the max temperatures (F) decrease. 
 
 ![fig05_correlation_latmaxtemp_nh.png](output_data/fig05_correlation_latmaxtemp_nh.png)
 
-## Strongest positive correlation
+### Strongest positive correlation
 #### Southern Hemisphere - Temperature (F) vs. Latitude
 
 The temperatures (F) (y-axis) are lowest farther away from the equator (latitue 0). As you get closer to the equator (higher latitude value, x-axis), the max temperature (F) increases. 
@@ -34,35 +34,45 @@ Series of scatter plots are created to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
   - ![fig01_lat_temp.png](output_data/fig01_lat_temp.png)
+  - Latitude vs. Temerature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude (equator), then as the latitude values increase greater than zero (increasing further from the equator), the temperature decreases steadily.
 * Humidity (%) vs. Latitude
   - ![fig02_lat_hum.png](output_data/fig02_lat_hum.png)
+  - Latitude vs. Humidity (%) scatter plot does not appear to show a strong correlation.
 * Cloudiness (%) vs. Latitude
   - ![fig03_lat_cloud.png](output_data/fig03_lat_cloud.png)
+  - Latitude vs. Cloudiness (%) scatter plot does not appear to show a strong correlation.
 * Wind Speed (mph) vs. Latitude
   - ![fig04_lat_wind.png](output_data/fig04_lat_wind.png)
+  - Latitude vs. Wind Speed scatter plot does not appear to show a strong correlation.
 
 After each plot, explaination of what the code is analyzing is included.
 
-Next, city weather data is separated into northern hemisphere (greater than or equal to 0 degrees latitude) and southern hemisphere (less than 0 degrees latitude). Linear regressions were run on each relationship:
+Next, city weather data is separated into northern hemisphere (greater than or equal to 0 degrees latitude) and southern hemisphere (less than 0 degrees latitude). Linear regressions were run on each relationship. After each plot, explaination of linear regression modeling is included.
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
-  - ![fig05_correlation_latmaxtemp_nh.png](output_data/fig05_correlation_latmaxtemp_nh.png)
+  - ![fig05_correlation_latmaxtemp_nh.png](output_data/fig05_correlation_latmaxtemp_nh.png) 
+  - Strong negative correlation coefficient (r value). In the northern hemisphere, the farther you are in degrees latitude from the equator, the temperature decreases steadily.
 * Southern Hemisphere - Temperature (F) vs. Latitude
   - ![fig06_correlation_latmaxtemp_sh.png](output_data/fig06_correlation_latmaxtemp_sh.png)
+  - Moderate positive correlation coefficient (r value). In the southern hemisphere, the closer you are in degrees latitude to the equator, the temperature increases moderately.
 * Northern Hemisphere - Humidity (%) vs. Latitude
   - ![fig07_correlation_lathum_nh.png](output_data/fig07_correlation_lathum_nh.png)
+  - Moderate positive correlation coefficient (r value). In the northern hemisphere, the farther you are in degrees latitude from the equator, the percent humidity increases moderately.
 * Southern Hemisphere - Humidity (%) vs. Latitude
   - ![fig08_correlation_lathum_sh.png](output_data/fig08_correlation_lathum_sh.png)
+  - Moderate positive correlation coefficient (r value). In the southern hemisphere, the closer you are in degrees latitude to the equator, the percent humidity increases moderately.
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
   - ![fig09_correlation_latcloud_nh.png](output_data/fig09_correlation_latcloud_nh.png)
+  - Weak positive correlation coefficient (r value). In the northern hemisphere, the farther you are in degrees latitude from the equator, the percent cloudiness increases slightly.
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
   - ![fig10_correlation_latcloud_sh.png](output_data/fig10_correlation_latcloud_sh.png)
+  - Weak positive correlation coefficient (r value). In the southern hemisphere, the closer you are in degrees latitude to the equator, the percent cloudiness increases slightly.
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
   - ![fig11_correlation_latwind_nh.png](output_data/fig11_correlation_latwind_nh.png)
+  - Very weak positive correlation coefficient (r value). In the northern hemisphere, the farther you are in degrees latitude from the equator, the wind speed (mph) increases very slightly.
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
   - ![fig12_correlation_latwind_sh.png](output_data/fig12_correlation_latwind_sh.png)
-
-After each plot, explaination of linear regression modeling is included.
+  - Weak negative correlation coefficient (r value). In the southern hemisphere, the closer you are in degrees latitude to the equator, the wind speed (mph) decreases slightly.
 
 Final notebook includes:
 
