@@ -33,22 +33,34 @@ Use WeatherPy python script to visualize the weather of 500+ cities across the w
 Series of scatter plots are created to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
+  - ![fig01_lat_temp.png](output_data/fig01_lat_temp.png)
 * Humidity (%) vs. Latitude
+  - ![fig02_lat_hum.png](output_data/fig02_lat_hum.png)
 * Cloudiness (%) vs. Latitude
+  - ![fig03_lat_cloud.png](output_data/fig03_lat_cloud.png)
 * Wind Speed (mph) vs. Latitude
+  - ![fig04_lat_wind.png](output_data/fig04_lat_wind.png)
 
 After each plot, explaination of what the code is analyzing is included.
 
 Next, city weather data is separated into northern hemisphere (greater than or equal to 0 degrees latitude) and southern hemisphere (less than 0 degrees latitude). Linear regressions were run on each relationship:
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+  - ![fig05_correlation_latmaxtemp_nh.png](output_data/fig05_correlation_latmaxtemp_nh.png)
 * Southern Hemisphere - Temperature (F) vs. Latitude
+  - ![fig06_correlation_latmaxtemp_sh.png](output_data/fig06_correlation_latmaxtemp_sh.png)
 * Northern Hemisphere - Humidity (%) vs. Latitude
+  - ![fig07_correlation_lathum_nh.png](output_data/fig07_correlation_lathum_nh.png)
 * Southern Hemisphere - Humidity (%) vs. Latitude
+  - ![fig08_correlation_lathum_sh.png](output_data/fig08_correlation_lathum_sh.png)
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+  - ![fig09_correlation_latcloud_nh.png](output_data/fig09_correlation_latcloud_nh.png)
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+  - ![fig10_correlation_latcloud_sh.png](output_data/fig10_correlation_latcloud_sh.png)
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+  - ![fig11_correlation_latwind_nh.png](output_data/fig11_correlation_latwind_nh.png)
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+  - ![fig12_correlation_latwind_sh.png](output_data/fig12_correlation_latwind_sh.png)
 
 After each plot, explaination of linear regression modeling is included.
 
@@ -67,7 +79,7 @@ VacationPy includes:
 
 * A heat map that displays the humidity for every city from Part I - WeatherPy.
 
-  ![heatmap](images/heatmap.png)
+  ![heatmap](output_data/heatmap.png)
 
 * Dataframe narrowed down to ideal weather conditions:
 
@@ -81,7 +93,7 @@ VacationPy includes:
 
 * Hotels layer plot on top of the humidity heatmap with each hotel containing the **Hotel Name**, **City**, and **Country**.
 
-  ![hotel map](images/hotel_map.png)
+  ![hotel map](output_data/hotel_map.png)
 
 As final considerations:
 
